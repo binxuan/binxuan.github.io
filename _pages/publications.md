@@ -8,7 +8,7 @@ author_profile: true
 ## Peer-reviewed Papers
 ### TCN: Table Convolutional Network for Web Table Interpretation,<br />
 Daheng Wang, Prashant Shiralkar, Colin Lockard, **Binxuan Huang**, Xin Luna Dong and Meng Jiang <br /> 
-The Web Conference, 2021 (to appear) <br /> 
+The Web Conference, 2021 <br /> 
 
 ### Entity Linking for Short Text Using Structured Knowledge Graph via Multi-grained Text Matching
 **Binxuan Huang**, Han Wang, Tong Wang, Yue Liu, Yang Liu<br /> 
