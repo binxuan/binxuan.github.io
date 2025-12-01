@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binxuan Huang</title>
+    <meta name="description" content="Personal website of Binxuan Huang, Principal Scientist at Amazon.">
+    <style>
+        :root {
+            --primary-color: #2c3e50; /* Navy Blue */
+            --secondary-color: #3498db; /* Light Blue */
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        /* Navigation */
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto 1.5rem auto;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        /* Sections */
+        section {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        section h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Items */
+        .item {
+            margin-bottom: 1.5rem;
+        }
+
+        .item-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .item-subtitle {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+
+        .publication-list li {
+            margin-bottom: 1rem;
+            list-style-position: inside;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--primary-color);
+            color: var(--white);
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* Simplified for mobile */
+            }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#" class="logo">Binxuan Huang</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#experience">Experience</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="hero">
+        <h1>Binxuan Huang</h1>
+        <p>Principal Scientist at Amazon | Ph.D. in Societal Computing</p>
+        <div class="social-links">
+            <a href="mailto:binxuanhuang@gmail.com">Email</a>
+            <a href="https://scholar.google.com/citations?user=_lCJGisAAAAJ&hl=en" target="_blank">Google Scholar</a>
+            <a href="https://www.linkedin.com/in/binxuan-huang-4874a2a7/">LinkedIn</a>
+            <a href="files/cv.pdf">CV</a>
+
+        </div>
+        <br>
+        <div style="text-align: left; max-width: 800px; margin: 0 auto;">
+            <p>
+                I am a Principal Scientist at Amazon, working on large language model pretraining for Amazon Rufus shopping assistant.
+                Prior to joining Amazon, I received my Ph.D. in Computer Science at Carnegie Mellon University, advised by Prof. Kathleen M. Carley. My doctoral work focused on social network analysis and data mining.
+            </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="item">
+            <div class="item-title">Carnegie Mellon University</div>
+            <div class="item-subtitle">Ph.D. in Computer Science | 2020</div>
+        </div>
+        <div class="item">
+            <div class="item-title">Zhejiang University</div>
+            <div class="item-subtitle">B.S. in Physics, B.E. in Computer Science | 2015</div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <div class="item">
+            <div class="item-content">Principal Scientist, Amazon, June 2020 - Present</div>
+            <div class="item-content">Research Intern, Amazon, May 2019 - Aug 2019</div>
+            <div class="item-content">Research Assistant, Carnegie Mellon University, Aug 2015 - May 2020</div>
+        </div>
+    </section>
+
+    <section id="publications">
+        <h2>Selected Publications</h2>
+        <ul class="publication-list">
+            <li>
+                <strong>DocTalk: Scalable Graph-based Dialogue Synthesis for Enhancing LLM Conversational Capabilities</strong><br>
+                Jing Yang Lee, Hamed Bonab, Nasser Zalmout, Ming Zeng, Sanket Lokegaonkar, Colin Lockard, Binxuan Huang, Ritesh Sarkhel, Haodong Wang<br>
+                <em>SIGDIAL, 2025</em>
+            </li>
+            <li>
+                <strong>Hephaestus: Improving Fundamental Agent Capabilities of Large Language Models through Continual Pre-Training</strong><br>
+                Yuchen Zhuang, Jingfeng Yang, Haoming Jiang, Xin Liu, Kewei Cheng, Sanket Lokegaonkar, Yifan Gao, Qing Ping, Tianyi Liu, Binxuan Huang, Zheng Li, Zhengyang Wang, Pei Chen, Ruijie Wang, Rongzhi Zhang, Nasser Zalmout, Priyanka Nigam, Bing Yin, Chao Zhang<br>
+                <em>NAACL, 2025</em>
+            </li>
+            <li>
+                <strong>Scaling laws for predicting downstream performance in LLMs</strong><br>
+                Yangyi Chen, Binxuan Huang, Yifan Gao, Zhengyang Wang, Jingfeng Yang, Heng Ji<br>
+                <em>TMLR 2024</em>
+            </li>
+            <li>
+                <strong>Concept2Box: Joint Geometric Embeddings for Learning Two-View Knowledge Graphs</strong><br>
+                Zijie Huang, Daheng Wang, Binxuan Huang, Chenwei Zhang, Jingbo Shang, Yan Liang, Zhengyang Wang, Xian Li, Christos Faloutsos, Yizhou Sun, Wei Wang<br>
+                <em>ACL 2023</em>
+            </li>
+            <li>
+                <strong>Tab-cleaner: Weakly supervised tabular data cleaning via pre-training for E-commerce catalog</strong><br>
+                Cheng, Kewei; Li, Xian; Wang, Zhengyang; Zhang, Chenwei; Huang, Binxuan; Xu, Yifan Ethan; Dong, Xin Luna; Sun, Yizhou<br>
+                <em>ACL 2023</em>
+            </li>
+        </ul>
+        <p style="margin-top: 1rem;"><a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" target="_blank">View full list on Google Scholar &rarr;</a></p>
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2025 Binxuan Huang. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
